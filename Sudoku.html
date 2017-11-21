@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>数独</title>
+</head>
+	<style type="text/css">
+		body, .swipper, ul, li{
+			margin: 0;
+			padding: 0;
+		}
+		.swipper{
+			height: 450px;
+			width: 450px;
+			border: 1px solid #000;
+			text-align: center;
+		}
+		ul{
+			height: 50px;
+			width: 450px;
+		}
+		li{
+			line-height: 40px;
+			height: 40px;
+			width: 40px;
+			float: left;
+			list-style: none;
+			border: 1px solid #CCC;
+			color: #999;
+			margin: 1px;
+		}
+		.select {
+			border: 1px solid #000;
+		}
+	</style>
+<body>
+	<div class="swipper"></div>
+
+	<script type="text/javascript" src="Sudoku.js"></script>
+	<script type="text/javascript">
+		var blankArr = mackBlank();
+		// console.log(blankArr);
+		var swipper = document.getElementsByClassName('swipper')[0];
+
+		for(var i = 0; i < 9; i++) {
+			var ul = document.createElement("ul");
+			swipper.appendChild(ul);
+			for(var j = 0; j < 9; j++) {
+				var liItem = document.createElement('li');
+				ul.appendChild(liItem);
+			}
+		}
+
+		var liList = document.getElementsByTagName("li");
+		// console.log(liList)
+		for(var i = 0; i < 9; i ++) {
+			for(var j = 0; j < 9; j++){
+				if(blankArr[i][j] != 0) {
+					liList[i * 9 + j].innerHTML = blankArr[i][j];
+				}
+			}
+		}
+		
+		for(var i = 0; i < liList.length; i++) {
+			liList[i].index = i;
+			liList[i].onclick = function () {
+				// console.log(this.index);
+				for(var j = 0; j < liList.length; j++) {
+					liList[j].className = '';
+				}
+
+				liList[this.index].className = 'select';
+			}
+		}
+
+		window.document.onkeydown = function (e) {
+			
+			console.log(e.keyCode);
+		}
+
+		
+	</script>
+</body>
+</html>
