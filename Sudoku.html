@@ -3,81 +3,38 @@
 <head>
 	<title>数独</title>
 </head>
-	<style type="text/css">
-		body, .swipper, ul, li{
-			margin: 0;
-			padding: 0;
-		}
-		.swipper{
-			height: 450px;
-			width: 450px;
-			border: 1px solid #000;
-			text-align: center;
-		}
-		ul{
-			height: 50px;
-			width: 450px;
-		}
-		li{
-			line-height: 40px;
-			height: 40px;
-			width: 40px;
-			float: left;
-			list-style: none;
-			border: 1px solid #CCC;
-			color: #999;
-			margin: 1px;
-		}
-		.select {
-			border: 1px solid #000;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="common.css">
 <body>
-	<div class="swipper"></div>
+	<div class="outer">
+		<div class="degree">
+			<div class="easy">简单</div>
+			<div class="normal">一般</div>
+			<div class="difficult">困难</div>
+		</div>
+		<div class="wrapper"></div>
+		<div class="keyboard">
+			<ul class="numBoard">
+				<li class="number">1</li>
+				<li class="number">2</li>
+				<li class="number">3</li>
+				<li class="number">4</li>
+				<li class="number">5</li>
+				<li class="number">6</li>
+				<li class="number">7</li>
+				<li class="number">8</li>
+				<li class="number">9</li>
+			</ul>
+			<ul class="control">
+				<li class="newGame">新游戏</li>
+				<li class="reset">重置</li>
+				<li class="cancel">撤销</li>
+				<li class="mark">标记</li>
+			</ul>
+		</div>
+		<div class="floatKey"></div>
 
+	</div>
 	<script type="text/javascript" src="Sudoku.js"></script>
-	<script type="text/javascript">
-		var blankArr = mackBlank();
-		// console.log(blankArr);
-		var swipper = document.getElementsByClassName('swipper')[0];
-
-		for(var i = 0; i < 9; i++) {
-			var ul = document.createElement("ul");
-			swipper.appendChild(ul);
-			for(var j = 0; j < 9; j++) {
-				var liItem = document.createElement('li');
-				ul.appendChild(liItem);
-			}
-		}
-
-		var liList = document.getElementsByTagName("li");
-		// console.log(liList)
-		for(var i = 0; i < 9; i ++) {
-			for(var j = 0; j < 9; j++){
-				if(blankArr[i][j] != 0) {
-					liList[i * 9 + j].innerHTML = blankArr[i][j];
-				}
-			}
-		}
-		
-		for(var i = 0; i < liList.length; i++) {
-			liList[i].index = i;
-			liList[i].onclick = function () {
-				// console.log(this.index);
-				for(var j = 0; j < liList.length; j++) {
-					liList[j].className = '';
-				}
-
-				liList[this.index].className = 'select';
-			}
-		}
-
-		window.document.onkeydown = function (e) {
-			
-			console.log(e.keyCode);
-		}
-
-		
-	</script>
+	<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
