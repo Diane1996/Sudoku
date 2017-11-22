@@ -144,7 +144,9 @@ window.onload = function () {
     };
 
     var newGameFun = function () {
-        blankArr = mackBlank(degree);
+        getArr = false;
+        var arr = newSudoku();
+        blankArr = mackBlank(degree, arr);
         fillBoard();
     };
 

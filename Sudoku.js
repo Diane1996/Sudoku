@@ -40,6 +40,7 @@ var fill = function(n) {
 				result[i][j] = arr[i][j];
 			}
 		}
+		console.log(result);
 		getArr = true;
 	} else {
 		var newArr = [];
@@ -50,7 +51,7 @@ var fill = function(n) {
 			}
 			newArr.push(data);
 			arr[row][col] = data;
-			if(check(row, col)) {
+			if(gameCheck(n, data, arr).result) {
 				fill(n + 1);
 			}
 		}
@@ -58,43 +59,17 @@ var fill = function(n) {
 	}
 };
 
-var check = function(row, col) {
-	var t, curData = arr[row][col];
-	for(t = 0; t < 9; t++) {
-		if ((t != col && arr[row][t] == curData) || (t != row && arr[t][col] == curData)) {
-			return false;
-		}
-	}
-	var gongRow = Math.floor(row / 3) * 3;
-	var gongCol = Math.floor(col / 3) * 3;
-	var index = 3*(row % 3) + col % 3;
-	var newArr = [], i, j, times = 0;
-	for (i = gongRow; i < gongRow + 3; i++) {
-		for(j = gongCol; j < gongCol + 3; j++) {
-			if(arr[i][j] === 0) continue;
-			if((times != index) && (arr[i][j] == curData)) {
-				return false;
-			}
-			times++;
-		}
-	}
-	return true;
-}
-
 var gameCheck = function(n, curData, blankArr) {
 	var row = Math.floor(n / 9), col = n % 9;
 	var t;
 	for(t = 0; t < 9; t++) {
-		// }
 		if (t != col && blankArr[row][t] == curData) {
-			console.log('行',row, t)
 			return {
 				result:false,
 				row: row,
-				col: t,
+				col: t
 			};
 		} else if(t != row && blankArr[t][col] == curData) {
-			console.log('列', t, col);
 			return {
 				result:false,
 				row: t,
@@ -106,12 +81,11 @@ var gameCheck = function(n, curData, blankArr) {
 	var gongRow = Math.floor(row / 3) * 3;
 	var gongCol = Math.floor(col / 3) * 3;
 	var index = 3*(row % 3) + col % 3;
-	var newArr = [], i, j, times = 0;
+	var i, j, times = 0;
 	for (i = gongRow; i < gongRow + 3; i++) {
 		for(j = gongCol; j < gongCol + 3; j++) {
 			if(blankArr[i][j] === 0) continue;
 			if((times != index) && (blankArr[i][j] == curData)) {
-				console.log('宫', i, j);
 				return {
 					result:false,
 					row: i,
@@ -123,7 +97,7 @@ var gameCheck = function(n, curData, blankArr) {
 	}
 	return {
 		result:true,
-		row: t,
+		row: row,
 		col: col
 	};
 };
@@ -131,10 +105,11 @@ var gameCheck = function(n, curData, blankArr) {
 var newSudoku = function () {
 	init();
 	fill(9);
+	return result;
 };
 
-var mackBlank = function (degree) {
-	var blankArr = []
+var mackBlank = function (degree, result) {
+	var blankArr = [];
 	for(var i = 0; i < 9; i++) {
 		blankArr[i] = [];
 		for(var j = 0; j < 9; j++) {
