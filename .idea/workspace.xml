@@ -15,80 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-114">
-              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding>
-                <element signature="e#910#959#0" expanded="false" />
-                <element signature="e#994#1043#0" expanded="false" />
-                <element signature="e#1081#1130#0" expanded="false" />
-                <element signature="e#1166#1378#0" expanded="false" />
-                <element signature="e#1412#1947#0" expanded="false" />
-                <element signature="e#1982#2503#0" expanded="false" />
-                <element signature="e#2537#4572#0" expanded="false" />
-                <element signature="e#4608#4838#0" expanded="false" />
-                <element signature="e#4874#4940#0" expanded="false" />
-                <element signature="e#4974#5002#0" expanded="false" />
-                <element signature="e#5042#5212#0" expanded="false" />
-                <element signature="e#5250#5457#0" expanded="false" />
-                <element signature="e#5501#6406#0" expanded="false" />
-                <element signature="e#6443#7280#0" expanded="false" />
-                <element signature="e#7320#7622#0" expanded="false" />
-                <element signature="e#7668#7847#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Sudoku.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Sudoku.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2636">
-              <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Sudoku.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sudoku.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-              <folding>
-                <element signature="e#113#172#0" expanded="false" />
-                <element signature="e#178#285#0" expanded="false" />
-                <element signature="e#293#401#0" expanded="false" />
-                <element signature="e#412#519#0" expanded="false" />
-                <element signature="e#530#621#0" expanded="false" />
-                <element signature="e#626#665#0" expanded="false" />
-                <element signature="e#670#815#0" expanded="false" />
-                <element signature="e#825#870#0" expanded="false" />
-                <element signature="e#880#982#0" expanded="false" />
-                <element signature="e#994#1057#0" expanded="false" />
-                <element signature="e#1068#1093#0" expanded="false" />
-                <element signature="e#1105#1237#0" expanded="false" />
-                <element signature="e#1238#1425#0" expanded="false" />
-                <element signature="e#1434#1525#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -127,7 +54,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="700" />
+    <option name="x" value="497" />
+    <option name="y" value="17" />
     <option name="width" value="1193" />
     <option name="height" value="1040" />
   </component>
@@ -196,23 +124,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1511324079614</updated>
-      <workItem from="1511324084726" duration="13149000" />
+      <workItem from="1511324084726" duration="13301000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13149000" />
+    <option name="totallyTimeSpent" value="13301000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="700" y="0" width="1193" height="1040" extended-state="0" />
+    <frame x="497" y="17" width="1193" height="1040" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12900433" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12900433" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32964602" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32964602" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -237,37 +165,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding>
-            <element signature="e#113#172#0" expanded="false" />
-            <element signature="e#178#285#0" expanded="false" />
-            <element signature="e#293#401#0" expanded="false" />
-            <element signature="e#412#519#0" expanded="false" />
-            <element signature="e#530#621#0" expanded="false" />
-            <element signature="e#626#665#0" expanded="false" />
-            <element signature="e#670#815#0" expanded="false" />
-            <element signature="e#825#870#0" expanded="false" />
-            <element signature="e#880#982#0" expanded="false" />
-            <element signature="e#994#1057#0" expanded="false" />
-            <element signature="e#1068#1093#0" expanded="false" />
-            <element signature="e#1105#1237#0" expanded="false" />
-            <element signature="e#1238#1425#0" expanded="false" />
-            <element signature="e#1434#1525#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sudoku.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-114">
@@ -293,11 +190,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Sudoku.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2636">
-          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        <state relative-caret-position="26">
+          <caret line="127" column="6" lean-forward="false" selection-start-line="127" selection-start-column="6" selection-end-line="127" selection-end-column="6" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sudoku.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding>
+            <element signature="e#113#172#0" expanded="false" />
+            <element signature="e#178#285#0" expanded="false" />
+            <element signature="e#293#401#0" expanded="false" />
+            <element signature="e#412#519#0" expanded="false" />
+            <element signature="e#530#621#0" expanded="false" />
+            <element signature="e#626#665#0" expanded="false" />
+            <element signature="e#670#815#0" expanded="false" />
+            <element signature="e#825#870#0" expanded="false" />
+            <element signature="e#880#982#0" expanded="false" />
+            <element signature="e#994#1057#0" expanded="false" />
+            <element signature="e#1068#1093#0" expanded="false" />
+            <element signature="e#1105#1237#0" expanded="false" />
+            <element signature="e#1238#1425#0" expanded="false" />
+            <element signature="e#1434#1525#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
