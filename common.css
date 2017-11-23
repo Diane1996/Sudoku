@@ -1,0 +1,115 @@
+body, div, ul, li {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    user-select: none;
+}
+
+.degree{
+    width: 310px;
+    height: 42px;
+    margin: 0 auto;
+}
+.easy{
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #000;
+    float: left;
+}
+.normal{
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #000;
+    float: left;
+
+}
+.difficult{
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #000;
+    float: left;
+}
+.current{
+    background: #ccc;
+}
+
+.wrapper {
+    margin: 20px auto;
+    height: 382px;
+    width: 380px;
+    border: 2px solid #000;
+}
+
+ul {
+    height: 42px;
+    width: 380px;
+}
+
+li {
+    line-height: 40px;
+    height: 40px;
+    width: 40px;
+    float: left;
+    list-style: none;
+    border: 1px solid #999;
+    color: #777;
+}
+
+.origin {
+    color: #000;
+    background: #898989;
+}
+
+.select {
+    border: 1px solid #000;
+    color: #000;
+    font-size: 17px;
+    background: rgba(0,0,0,0.1);
+}
+
+.keyboard {
+    margin: 20px auto;
+    width: 386px;
+    height: 100px;
+}
+
+.numBoard{
+    margin-top: 20px;
+}
+
+.floatKey {
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    position: absolute;
+    display: none;
+}
+@keyframes pulse {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        transform: scale3d(1.5, 1.5, 1.5);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.pulse {
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+    animation-name: pulse;
+}
+
+.control>li{
+    width: 85px;
+    height: 40px;
+    margin: 20px 0 0 4px;
+}
