@@ -2,7 +2,7 @@ window.onload = function () {
     var degree = 4;
     var blankArr;
     var newBlankArr = [];
-    var numKey = 0, timer, curIndex;
+    var numKey = 0, timer;
     var outer = document.getElementsByClassName('outer')[0];
     var wrapper = document.getElementsByClassName('wrapper')[0];
 
@@ -20,18 +20,27 @@ window.onload = function () {
     var floatKey = document.getElementsByClassName('floatKey')[0];
 
     easy.onclick = function() {
-        degree = 3;
+        degree = 5;
         clearBoard();
+        easy.classList.add('current');
+        normal.classList.remove('current');
+        difficult.classList.remove('current');
     };
 
     normal.onclick = function() {
         degree = 4;
         clearBoard();
+        easy.classList.remove('current');
+        normal.classList.add('current');
+        difficult.classList.remove('current');
     };
 
     difficult.onclick = function() {
-        degree = 5;
+        degree = 3;
         clearBoard();
+        easy.classList.remove('current');
+        normal.classList.remove('current');
+        difficult.classList.add('current');
     };
 
     var clearBoard = function () {
@@ -80,13 +89,13 @@ window.onload = function () {
     };
 
     var inputKey = function () {
-        for (var i = 0; i < liList.length; i++) {
+        for (var i = 0; i < 81; i++) {
             var index;
             liList[i].index = i;
             newGame.onclick = newGameFun;
             reset.onclick = resetFun;
             liList[i].onclick = function () {
-                if (liList[this.index].className !== 'origin') {
+                if (liList[this.index].className !== 'origin' && blankArr != null) {
                     index = this.index;
                     var row = Math.floor(index / 9), col = index % 9;
 
@@ -202,6 +211,7 @@ window.onload = function () {
                 var floatHTML = floatKey.innerHTML;
                 var floatDisplay = floatKey.style.display;
                 var numHTML = number[this.index].innerHTML;
+                mouseMove(ev, floatKey);
                 if (floatHTML === numHTML && floatDisplay === 'block') {
                     numKey = 0;
                     floatKey.style.display = 'none';
@@ -211,35 +221,30 @@ window.onload = function () {
                     floatKey.innerHTML = numHTML;
                     document.onmousemove = function (ev) {
                         mouseMove(ev, floatKey);
-                        // numBoardFun();
                     }
                 }
             }
         }
-
     };
 
     var mousePosition= function (ev) {
         if (ev.pageX || ev.pageY) {
             return {x: ev.pageX + 1, y: ev.pageY + 1}
         }
-
         return {
             x: ev.clientX + document.body.scrollLeft - document.body.clientLeft + 1,
             y: ev.clientY + document.body.scrollTop - document.body.clientTop + 1
         }
-    }
+    };
 
     var mouseMove = function (ev, floadKey) {
         ev = ev || window.event;
         var mousePos = mousePosition(ev);
         floadKey.style.left = mousePos.x + 'px';
         floadKey.style.top = mousePos.y + 'px';
-    }
+    };
 
     newBoard();
     inputKey();
     numBoardFun();
-
-
 };

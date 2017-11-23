@@ -22,7 +22,7 @@ var init = function () {
 	for(var k = 0; k < 9; k++) {
 		var i = generateIndex();
 		var j = generateIndex();
-		var t = arr[0][i]
+		var t = arr[0][i];
 		arr[0][i] = arr[0][j];
 		arr[0][j] = t;
 	}
@@ -59,17 +59,17 @@ var fill = function(n) {
 	}
 };
 
-var gameCheck = function(n, curData, blankArr) {
+var gameCheck = function(n, curData, puzzleArr) {
 	var row = Math.floor(n / 9), col = n % 9;
 	var t;
 	for(t = 0; t < 9; t++) {
-		if (t != col && blankArr[row][t] == curData) {
+		if (t != col && puzzleArr[row][t] == curData) {
 			return {
 				result:false,
 				row: row,
 				col: t
 			};
-		} else if(t != row && blankArr[t][col] == curData) {
+		} else if(t != row && puzzleArr[t][col] == curData) {
 			return {
 				result:false,
 				row: t,
@@ -84,8 +84,8 @@ var gameCheck = function(n, curData, blankArr) {
 	var i, j, times = 0;
 	for (i = gongRow; i < gongRow + 3; i++) {
 		for(j = gongCol; j < gongCol + 3; j++) {
-			if(blankArr[i][j] === 0) continue;
-			if((times != index) && (blankArr[i][j] == curData)) {
+			if(puzzleArr[i][j] === 0) continue;
+			if((times != index) && (puzzleArr[i][j] == curData)) {
 				return {
 					result:false,
 					row: i,
@@ -108,26 +108,14 @@ var newSudoku = function () {
 	return result;
 };
 
-var mackBlank = function (degree, result) {
-	var blankArr = [];
-	for(var i = 0; i < 9; i++) {
-		blankArr[i] = [];
-		for(var j = 0; j < 9; j++) {
-			blankArr[i][j] = result[i][j];
-		}
-	}
+var mackBlank = function (degree, puzzle) {
 	for(var i = 0; i < 9; i ++) {
-		var newArr = [];
-		for(var j = 0; j < degree; j++) {
-			var index = generateIndex();
-			while(newArr.indexOf(index) != -1) {
-				index = generateIndex();
-			}
-			newArr.push(index);
-			blankArr[i][index] = 0;	
+		for(var j = 0; j < 9; j++) {
+			var rate = Math.floor(generateIndex()/degree);
+            puzzle[i][j] = rate ? 0 : puzzle[i][j];
 		}
 	}
-	return blankArr;
+	return puzzle;
 };
 
 newSudoku();

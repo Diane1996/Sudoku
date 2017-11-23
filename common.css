@@ -32,6 +32,9 @@ body, div, ul, li {
     border: 1px solid #000;
     float: left;
 }
+.current{
+    background: #ccc;
+}
 
 .wrapper {
     margin: 20px auto;
