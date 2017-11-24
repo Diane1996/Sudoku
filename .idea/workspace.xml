@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d7a37254-411f-4e7d-901c-cf92a6be1f98" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/Sudoku.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sudoku.js" afterPath="$PROJECT_DIR$/Sudoku.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common.css" afterPath="$PROJECT_DIR$/common.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.js" afterPath="$PROJECT_DIR$/main.js" />
-    </list>
+    <list default="true" id="d7a37254-411f-4e7d-901c-cf92a6be1f98" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -211,12 +203,12 @@
       <updated>1511324079614</updated>
       <workItem from="1511324084726" duration="15989000" />
       <workItem from="1511402006808" duration="6651000" />
-      <workItem from="1511511533942" duration="6644000" />
+      <workItem from="1511511533942" duration="6726000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29284000" />
+    <option name="totallyTimeSpent" value="29366000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="762" y="0" width="1138" height="1040" extended-state="0" />
