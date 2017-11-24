@@ -68,8 +68,6 @@ window.onload = function () {
                 ul.appendChild(liItem);
             }
         }
-
-
     };
 
     var fillBoard = function () {
@@ -104,7 +102,7 @@ window.onload = function () {
                         if (data.result) {
                             liList[index].innerHTML = numKey;
                             newBlankArr[row][col] = numKey;
-                            console.log(newBlankArr);
+                            // console.log(newBlankArr);
                             if (isGameover()) {
                                 alert('你赢了！');
                             }
@@ -154,9 +152,12 @@ window.onload = function () {
 
     var newGameFun = function () {
         getArr = false;
-        var arr = newSudoku();
-        blankArr = mackBlank(degree, arr);
+        var finalArr = newSudoku();
+        blankArr = mackBlank(degree, finalArr);
         fillBoard();
+        for(var i = 0; i < 81; i++) {
+            liList[i].style.color = '#000';
+        }
     };
 
     var resetFun = function () {

@@ -30,15 +30,11 @@ var init = function () {
 
 var getArr = false;
 var fill = function(n) {
-	var row = Math.floor(n / 9), col = n % 9;	
-
+	var row = Math.floor(n / 9), col = n % 9;
 	if(getArr) return;
 	if (n == 81) {
 		for(var i = 0; i < 9; i++) {
-			result[i] = [];
-			for(var j = 0; j < 9; j++) {
-				result[i][j] = arr[i][j];
-			}
+            result[i] = arr[i].slice(0);
 		}
 		console.log(result);
 		getArr = true;
@@ -56,13 +52,13 @@ var fill = function(n) {
 			}
 		}
 		arr[row][col] = 0;
+		// console.log(arr);
 	}
 };
 
 var gameCheck = function(n, curData, puzzleArr) {
 	var row = Math.floor(n / 9), col = n % 9;
-	var t;
-	for(t = 0; t < 9; t++) {
+	for(var t = 0; t < 9; t++) {
 		if (t != col && puzzleArr[row][t] == curData) {
 			return {
 				result:false,
@@ -81,9 +77,9 @@ var gameCheck = function(n, curData, puzzleArr) {
 	var gongRow = Math.floor(row / 3) * 3;
 	var gongCol = Math.floor(col / 3) * 3;
 	var index = 3*(row % 3) + col % 3;
-	var i, j, times = 0;
-	for (i = gongRow; i < gongRow + 3; i++) {
-		for(j = gongCol; j < gongCol + 3; j++) {
+	var times = 0;
+	for (var i = gongRow; i < gongRow + 3; i++) {
+		for(var j = gongCol; j < gongCol + 3; j++) {
 			if(puzzleArr[i][j] === 0) continue;
 			if((times != index) && (puzzleArr[i][j] == curData)) {
 				return {
@@ -96,26 +92,29 @@ var gameCheck = function(n, curData, puzzleArr) {
 		}
 	}
 	return {
-		result:true,
-		row: row,
-		col: col
+		result:true
 	};
 };
 
 var newSudoku = function () {
 	init();
 	fill(9);
-	return result;
+	var newArr = result.slice(0);
+	return newArr;
 };
 
 var mackBlank = function (degree, puzzle) {
-	for(var i = 0; i < 9; i ++) {
+	var newPuzzle = [];
+    for(var i = 0; i < 9; i++) {
+        newPuzzle[i] = puzzle[i].slice(0);
+    }
+
+    for(var i = 0; i < 9; i ++) {
 		for(var j = 0; j < 9; j++) {
 			var rate = Math.floor(generateIndex()/degree);
-            puzzle[i][j] = rate ? 0 : puzzle[i][j];
+            newPuzzle[i][j] = rate ? 0 : newPuzzle[i][j];
 		}
 	}
-	return puzzle;
+	var newArr = newPuzzle.slice(0);
+	return newArr;
 };
-
-newSudoku();
