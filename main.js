@@ -1,6 +1,7 @@
 window.onload = function () {
     var degree = 4;
     var blankArr;
+    var sudoku = new Sudoku();
     var newBlankArr = [];
     var numKey = 0, timer;
     var outer = document.getElementsByClassName('outer')[0];
@@ -151,9 +152,11 @@ window.onload = function () {
     };
 
     var newGameFun = function () {
+
+
         getArr = false;
-        var finalArr = newSudoku();
-        blankArr = mackBlank(degree, finalArr);
+        var finalArr = sudoku.newSudoku();
+        blankArr = sudoku.mackBlank(degree, finalArr);
         fillBoard();
         for(var i = 0; i < 81; i++) {
             liList[i].style.color = '#000';
@@ -184,7 +187,7 @@ window.onload = function () {
         if (e.keyCode > 48 && e.keyCode < 58) {
             var row = Math.floor(index / 9), col = index % 9;
             var key = String.fromCharCode(e.keyCode);
-            var data = gameCheck(index, key, newBlankArr);
+            var data = sudoku.gameCheck(index, key, newBlankArr);
             if (data.result) {
                 liList[index].innerHTML = key;
                 newBlankArr[row][col] = key;

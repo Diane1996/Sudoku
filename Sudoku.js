@@ -13,6 +13,16 @@ Sudoku.prototype = {
                 this.arr[i][j] = 0;
             }
         }
+        for (var i = 0; i < 9; i++) {
+            this.arr[0][i] = i + 1;
+        }
+        for (var k = 0; k < 9; k++) {
+            var i = this.generateIndex();
+            var j = this.generateIndex();
+            var t = this.arr[0][i];
+            this.arr[0][i] = this.arr[0][j];
+            this.arr[0][j] = t;
+        }
     },
 
     generateNum: function () {
@@ -46,7 +56,7 @@ Sudoku.prototype = {
                 }
             }
             this.arr[row][col] = 0;
-            console.log(this.arr);
+            // console.log(this.arr);
         }
     },
     gameCheck: function (n, curData, puzzleArr) {
@@ -89,7 +99,6 @@ Sudoku.prototype = {
     },
 
     newSudoku: function () {
-        console.log('qwe');
         this.init();
         this.fill(9);
         var newArr = this.result.slice(0);
@@ -114,7 +123,5 @@ Sudoku.prototype = {
 
 };
 
-var sudoku = new Sudoku();
-sudoku.newSudoku();
 
 
