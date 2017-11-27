@@ -122,13 +122,13 @@ window.onload = function () {
                         cancelFun(index);
                     };
 
-                    for (var j = 0; j < liList.length; j++) {
-                        liList[j].classList.remove('select');
-                    }
-
                     mark.onclick = function () {
                         markFun(index);
                     };
+
+                    for (var j = 0; j < liList.length; j++) {
+                        liList[j].classList.remove('select');
+                    }
 
                     liList[index].classList.add('select');
                     window.document.onkeydown = function (e) {

@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d7a37254-411f-4e7d-901c-cf92a6be1f98" name="Default" comment="" />
+    <list default="true" id="d7a37254-411f-4e7d-901c-cf92a6be1f98" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sudoku.js" afterPath="$PROJECT_DIR$/Sudoku.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.js" afterPath="$PROJECT_DIR$/main.js" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -17,33 +21,28 @@
       <file leaf-file-name="Sudoku.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sudoku.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
+            <state relative-caret-position="0">
               <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sudoku.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Sudoku.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sudoku.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="104" column="0" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-              <folding>
-                <element signature="e#304#512#0" expanded="false" />
-                <element signature="e#558#1077#0" expanded="false" />
-                <element signature="e#1128#1879#0" expanded="false" />
-                <element signature="e#1910#1979#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="185">
+              <caret line="91" column="27" lean-forward="false" selection-start-line="91" selection-start-column="27" selection-end-line="91" selection-end-column="27" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="105" column="46" lean-forward="true" selection-start-line="105" selection-start-column="46" selection-end-line="105" selection-end-column="46" />
+            <state relative-caret-position="444">
+              <caret line="72" column="32" lean-forward="false" selection-start-line="72" selection-start-column="32" selection-end-line="72" selection-end-column="32" />
               <folding>
                 <element signature="e#900#1079#0" expanded="false" />
                 <element signature="e#1114#1293#0" expanded="false" />
@@ -51,7 +50,11 @@
                 <element signature="e#1546#1758#0" expanded="false" />
                 <element signature="e#1792#2325#0" expanded="false" />
                 <element signature="e#2360#2881#0" expanded="false" />
+                <element signature="e#2915#4962#0" expanded="false" />
+                <element signature="e#3371#4346#0" expanded="false" />
+                <element signature="e#4638#4723#0" expanded="false" />
                 <element signature="e#4998#5228#0" expanded="false" />
+                <element signature="e#5264#5492#0" expanded="false" />
                 <element signature="e#5526#5554#0" expanded="false" />
                 <element signature="e#5594#5764#0" expanded="false" />
                 <element signature="e#5802#6009#0" expanded="false" />
@@ -67,8 +70,8 @@
       <file leaf-file-name="common.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+            <state relative-caret-position="572">
+              <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
               <folding>
                 <element signature="e#113#172#0" expanded="false" />
                 <element signature="e#178#285#0" expanded="false" />
@@ -100,6 +103,12 @@
       <find>blankArr</find>
       <find>newGameFun</find>
       <find>final</find>
+      <find>arr</find>
+      <find>result</find>
+      <find>getArr</find>
+      <find>clearBoard</find>
+      <find>generateNum</find>
+      <find>generateIndex</find>
     </findStrings>
     <dirStrings>
       <dir>E:\work\test\Sudoku</dir>
@@ -113,8 +122,9 @@
       <list>
         <option value="$PROJECT_DIR$/Sudoku.html" />
         <option value="$PROJECT_DIR$/common.css" />
-        <option value="$PROJECT_DIR$/Sudoku.js" />
         <option value="$PROJECT_DIR$/main.js" />
+        <option value="$PROJECT_DIR$/elevator.js" />
+        <option value="$PROJECT_DIR$/Sudoku.js" />
       </list>
     </option>
   </component>
@@ -132,10 +142,11 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="762" />
-    <option name="width" value="1138" />
+    <option name="x" value="663" />
+    <option name="width" value="1237" />
     <option name="height" value="1040" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -151,6 +162,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -162,8 +175,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -203,31 +214,33 @@
       <updated>1511324079614</updated>
       <workItem from="1511324084726" duration="15989000" />
       <workItem from="1511402006808" duration="6651000" />
-      <workItem from="1511511533942" duration="6726000" />
+      <workItem from="1511511533942" duration="6905000" />
+      <workItem from="1511749016945" duration="8063000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29366000" />
+    <option name="totallyTimeSpent" value="37608000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="762" y="0" width="1138" height="1040" extended-state="0" />
+    <frame x="663" y="0" width="1237" height="1040" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13090909" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35951328" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35911602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -254,14 +267,73 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sudoku.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2288">
+          <caret line="104" column="0" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding>
+            <element signature="e#113#172#0" expanded="false" />
+            <element signature="e#178#285#0" expanded="false" />
+            <element signature="e#293#401#0" expanded="false" />
+            <element signature="e#412#519#0" expanded="false" />
+            <element signature="e#528#553#0" expanded="false" />
+            <element signature="e#564#655#0" expanded="false" />
+            <element signature="e#660#699#0" expanded="false" />
+            <element signature="e#1028#1091#0" expanded="false" />
+            <element signature="e#1102#1127#0" expanded="false" />
+            <element signature="e#1139#1271#0" expanded="false" />
+            <element signature="e#1272#1459#0" expanded="false" />
+            <element signature="e#1468#1559#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2288">
+          <caret line="104" column="15" lean-forward="true" selection-start-line="104" selection-start-column="15" selection-end-line="104" selection-end-column="15" />
+          <folding>
+            <element signature="e#900#1079#0" expanded="false" />
+            <element signature="e#1114#1293#0" expanded="false" />
+            <element signature="e#1331#1510#0" expanded="false" />
+            <element signature="e#1546#1758#0" expanded="false" />
+            <element signature="e#1792#2325#0" expanded="false" />
+            <element signature="e#2360#2881#0" expanded="false" />
+            <element signature="e#2915#4962#0" expanded="false" />
+            <element signature="e#3371#4346#0" expanded="false" />
+            <element signature="e#4638#4723#0" expanded="false" />
+            <element signature="e#4998#5228#0" expanded="false" />
+            <element signature="e#5264#5492#0" expanded="false" />
+            <element signature="e#5526#5554#0" expanded="false" />
+            <element signature="e#5594#5764#0" expanded="false" />
+            <element signature="e#5802#6009#0" expanded="false" />
+            <element signature="e#6053#6958#0" expanded="false" />
+            <element signature="e#6995#7830#0" expanded="false" />
+            <element signature="e#7870#8171#0" expanded="false" />
+            <element signature="e#8218#8397#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sudoku.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sudoku.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="18" column="15" lean-forward="false" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
-          <folding>
-            <element signature="e#304#512#0" expanded="false" />
-            <element signature="e#558#1077#0" expanded="false" />
-            <element signature="e#1128#1879#0" expanded="false" />
-            <element signature="e#1910#1979#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -277,12 +349,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1342">
           <caret line="61" column="47" lean-forward="true" selection-start-line="61" selection-start-column="47" selection-end-line="61" selection-end-column="47" />
-          <folding>
-            <element signature="e#304#512#0" expanded="false" />
-            <element signature="e#558#1077#0" expanded="false" />
-            <element signature="e#1128#1879#0" expanded="false" />
-            <element signature="e#1910#1979#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -297,7 +364,11 @@
             <element signature="e#1546#1758#0" expanded="false" />
             <element signature="e#1792#2325#0" expanded="false" />
             <element signature="e#2360#2881#0" expanded="false" />
+            <element signature="e#2915#4962#0" expanded="false" />
+            <element signature="e#3371#4346#0" expanded="false" />
+            <element signature="e#4638#4723#0" expanded="false" />
             <element signature="e#4998#5228#0" expanded="false" />
+            <element signature="e#5264#5492#0" expanded="false" />
             <element signature="e#5526#5554#0" expanded="false" />
             <element signature="e#5594#5764#0" expanded="false" />
             <element signature="e#5802#6009#0" expanded="false" />
@@ -318,8 +389,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/common.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+        <state relative-caret-position="572">
+          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
           <folding>
             <element signature="e#113#172#0" expanded="false" />
             <element signature="e#178#285#0" expanded="false" />
@@ -339,29 +410,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sudoku.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
+        <state relative-caret-position="0">
           <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sudoku.js">
+    <entry file="file://$PROJECT_DIR$/elevator.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="104" column="0" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-          <folding>
-            <element signature="e#304#512#0" expanded="false" />
-            <element signature="e#558#1077#0" expanded="false" />
-            <element signature="e#1128#1879#0" expanded="false" />
-            <element signature="e#1910#1979#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="352">
+          <caret line="16" column="52" lean-forward="true" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="105" column="46" lean-forward="true" selection-start-line="105" selection-start-column="46" selection-end-line="105" selection-end-column="46" />
+        <state relative-caret-position="444">
+          <caret line="72" column="32" lean-forward="false" selection-start-line="72" selection-start-column="32" selection-end-line="72" selection-end-column="32" />
           <folding>
             <element signature="e#900#1079#0" expanded="false" />
             <element signature="e#1114#1293#0" expanded="false" />
@@ -369,7 +435,11 @@
             <element signature="e#1546#1758#0" expanded="false" />
             <element signature="e#1792#2325#0" expanded="false" />
             <element signature="e#2360#2881#0" expanded="false" />
+            <element signature="e#2915#4962#0" expanded="false" />
+            <element signature="e#3371#4346#0" expanded="false" />
+            <element signature="e#4638#4723#0" expanded="false" />
             <element signature="e#4998#5228#0" expanded="false" />
+            <element signature="e#5264#5492#0" expanded="false" />
             <element signature="e#5526#5554#0" expanded="false" />
             <element signature="e#5594#5764#0" expanded="false" />
             <element signature="e#5802#6009#0" expanded="false" />
@@ -378,6 +448,14 @@
             <element signature="e#7870#8171#0" expanded="false" />
             <element signature="e#8218#8397#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sudoku.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="91" column="27" lean-forward="false" selection-start-line="91" selection-start-column="27" selection-end-line="91" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
