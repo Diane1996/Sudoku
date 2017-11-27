@@ -116,3 +116,5 @@ Sudoku.prototype = {
 
 var sudoku = new Sudoku();
 sudoku.newSudoku();
+
+
